@@ -51,14 +51,6 @@
   opacity: 1;
 }
 
-.profile__edit-btn-words {
-  width: 84px;
-  font-family: Poppins;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 100%;
-}
-
 .profile__edit-btn {
   display: flex;
   gap: 8px;
@@ -69,6 +61,19 @@
   border: none;
   padding: 0px;
   opacity: 0.7;
+  cursor: pointer;
+}
+
+.profile__edit-btn:hover {
+  opacity: 1;
+}
+
+.profile__edit-btn-words {
+  width: 84px;
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
 }
 
 .profile__add-btn {
@@ -83,6 +88,11 @@
   border-radius: 8px;
   background-color: #212121;
   color: #fcf5e5;
+  cursor: pointer;
+}
+
+.profile__add-btn:hover {
+  opacity: 0.7;
 }
 
 .profile__add-btn-image {
