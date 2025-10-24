@@ -1,10 +1,16 @@
 # Project 3: Spots
 
+An image sharing site
+
 ### Overview
 
 - Intro
 - Figma
 - Images
+- Project Pitch Video
+- link
+
+This is my Spots project where we practice media queries and making the page more responsive. Also learn about figma design.
 
 **Intro**
 
@@ -20,6 +26,9 @@ The way you'll do this at work is by exporting images directly from Figma — we
 
 Good luck and have fun!
 
-**link**
+## Project Pitch Video
 
-https://silverwolf9777.github.io/se_project_spots/
+Check out [this video](https://drive.google.com/file/d/10zanIqlY2Ek158CFalXDtTCq02kUH8LC/view?usp=drive_link), where I describe my
+project and some challenges I faced while building it.
+
+[Check the page out on git hub!](https://silverwolf9777.github.io/se_project_spots/)
