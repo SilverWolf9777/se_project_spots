@@ -9,9 +9,13 @@
   right: 0;
   bottom: 0;
   left: 0;
+  opacity: 0;
+  transition: visibility 0s linear 0.5s, opacity 0.5s linear;
 }
 .modal_is-opened {
+  opacity: 1;
   visibility: visible;
+  transition-delay: 0s;
 }
 .modal__container {
   font-family: Poppins, Arial, Helvetica, sans-serif;
@@ -73,10 +77,15 @@
   font-size: 20px;
   line-height: 100%;
   border-width: 1px;
+  cursor: pointer;
 }
 
 .modal__input::placeholder {
   color: #2121214d;
+}
+
+.modal__input:hover {
+  color: #212121;
 }
 
 .modal__submit-btn {
