@@ -37,6 +37,13 @@
   background-image: url(../images/close.svg);
   border: none;
   background-color: #fff;
+  cursor: pointer;
+}
+
+.modal__close-btn:hover {
+  background-image: url(../images/close-hover.svg);
+  background-repeat: no-repeat;
+  background: cover;
 }
 
 .modal__title {
