@@ -20,7 +20,7 @@ const newPostForm = newPostModal.querySelector(".modal__form");
 const newPostCloseBtn = newPostModal.querySelector(".modal__close-btn");
 const newPostImgInput = newPostModal.querySelector("#card-image-input");
 const newPostCaptionInput = newPostModal.querySelector("#card-caption-input");
-const newPostSubmitBtn = editProfileModal.querySelector(".modal__submit-btn");
+const newPostSubmitBtn = newPostModal.querySelector(".modal__submit-btn");
 
 editProfileBtn.addEventListener("click", function () {
   editProfileNameInput.value = profileNameEl.textContent;
