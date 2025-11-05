@@ -30,6 +30,7 @@
   padding: 32px 50px;
   position: relative;
   margin: 0 10px;
+  box-sizing: border-box;
 }
 
 .modal__close-btn {
@@ -45,9 +46,7 @@
 }
 
 .modal__close-btn:hover {
-  background-image: url(../images/close-hover.svg);
-  background-repeat: no-repeat;
-  background: cover;
+  background: url(../images/close-hover.svg) no-repeat center/cover;
 }
 
 .modal__title {
@@ -69,10 +68,10 @@
 }
 
 .modal__input {
-  display: block;
   padding: 12px;
   border-radius: 8px;
-  border-color: #21212140;
+  box-sizing: border-box;
+  border: 1px solid #21212140;
   margin: 10px 0 32px;
   font-size: 20px;
   line-height: 100%;
@@ -98,9 +97,23 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
+  transition: opacity 0.5s linear 0s;
+}
+
+.modal__submit-btn:hover {
+  opacity: 0.8;
 }
 
 @media screen and (max-width: 627px) {
+  .modal__container {
+    padding: 22px 12px 12px;
+  }
+  .modal__close-btn {
+    top: 12px;
+    right: 12px;
+  }
+
   .modal__title {
     font-size: 20px;
   }
