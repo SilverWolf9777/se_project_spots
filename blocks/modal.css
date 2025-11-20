@@ -114,7 +114,7 @@
   position: relative;
 }
 
-.modal__type_preview_image {
+.modal__image_type_preview {
   max-width: 80vw;
   max-height: 80vh;
   width: auto;
@@ -124,7 +124,7 @@
   border-radius: 8px;
 }
 
-.modal__type_preview-title {
+.modal__title_type_preview {
   font-family: Poppins, Arial, Helvetica, sans-serif;
   font-size: 20px;
   padding: 4px 8px;
@@ -157,7 +157,7 @@
     right: 0px;
   }
   .modal__type_preview_image {
-    max-width: unset;
+    max-width: 90vw;
   }
   .modal__title {
     font-size: 20px;

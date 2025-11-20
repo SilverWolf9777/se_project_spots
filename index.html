@@ -60,7 +60,7 @@
             </template>
           </ul>
         </section>
-        <footer class="footer">
+        <footer class="footer page__section">
           <p class="footer__paragraph">2025 &copy; Spots</p>
         </footer>
 
@@ -103,6 +103,7 @@
                 type="url"
                 class="modal__input"
                 placeholder="Paste a link to the picture"
+                required
               />
               <label for="card-caption-input" class="modal__label"
                 >Caption</label
@@ -112,6 +113,7 @@
                 type="text"
                 class="modal__input"
                 placeholder="Type your caption"
+                required
               />
               <button type="submit" class="modal__submit-btn">Save</button>
             </form>
@@ -123,8 +125,12 @@
               class="modal__close-btn modal__close-btn_type_preview"
               type="button"
             ></button>
-            <img src="#" alt="" class="modal__type_preview_image" />
-            <p class="modal__type_preview-title"></p>
+            <img
+              src="#"
+              alt=""
+              class="modal__image modal__image_type_preview"
+            />
+            <p class="modal__title_type_preview"></p>
           </div>
         </div>
       </main>
