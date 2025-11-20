@@ -59,14 +59,13 @@ const newPostForm = newPostModal.querySelector(".modal__form");
 const newPostCloseBtn = newPostModal.querySelector(".modal__close-btn");
 const newPostImgInput = newPostModal.querySelector("#card-image-input");
 const newPostCaptionInput = newPostModal.querySelector("#card-caption-input");
-const newPostSubmitBtn = newPostModal.querySelector(".modal__submit-btn");
 
 const previewModal = document.querySelector("#preview-modal");
-const closePrievewModalBtnEl = previewModal.querySelector(
+const closePreviewModalBtnEl = previewModal.querySelector(
   ".modal__close-btn_type_preview"
 );
-const previewImgEl = previewModal.querySelector(".modal__type_preview_image");
-const previewTitleEl = previewModal.querySelector(".modal__type_preview-title");
+const previewImgEl = previewModal.querySelector(".modal__image_type_preview");
+const previewTitleEl = previewModal.querySelector(".modal__title_type_preview");
 
 function getCardElement(data) {
   const cardElement = cardTemplate.querySelector(".card").cloneNode(true);
@@ -83,7 +82,7 @@ function getCardElement(data) {
     previewImgEl.src = cardImageEl.src;
     previewImgEl.alt = cardTitleEl.textContent;
     previewTitleEl.textContent = cardTitleEl.textContent;
-    previewModal.classList.toggle("modal_is-opened");
+    openModal(previewModal);
   });
   const cardLikeBtnEl = cardElement.querySelector(".card__like-btn");
   cardLikeBtnEl.addEventListener("click", () => {
@@ -139,12 +138,14 @@ function handleNewPostSubmit(event) {
   cardContainer.prepend(cardElement);
   event.preventDefault();
   closeModal(newPostModal);
+  newPostImgInput.value = "";
+  newPostCaptionInput.value = "";
 }
 
 initialCards.forEach((card) => {
   cardContainer.append(getCardElement(card));
 });
 
-closePrievewModalBtnEl.addEventListener("click", () => {
-  previewModal.classList.toggle("modal_is-opened");
+closePreviewModalBtnEl.addEventListener("click", () => {
+  closeModal(previewModal);
 });
