@@ -32,3 +32,6 @@ Check out [this video](https://drive.google.com/file/d/10zanIqlY2Ek158CFalXDtTCq
 project and some challenges I faced while building it.
 
 [Check the page out on git hub!](https://silverwolf9777.github.io/se_project_spots/)
+
+[project pitch for stage 9](https://www.loom.com/share/5f457155047b425887b048722ae76875)
+My free trial ended and won't let me download it to add it to google drive.
