@@ -108,16 +108,12 @@ function openModal(modal) {
   function handleEsc(evt) {
     if (evt.key === "Escape") {
       closeModal(modal);
-      document.removeEventListener("keydown", handleEsc);
     }
   }
   document.addEventListener("keydown", handleEsc);
-
   function handleClickOutside(evt) {
     if (evt.target === modal) {
       closeModal(modal);
-      modal.removeEventListener("mousedown", handleClickOutside);
-      document.removeEventListener("keydown", handleEsc);
     }
   }
   modal.addEventListener("mousedown", handleClickOutside);
@@ -125,6 +121,8 @@ function openModal(modal) {
 
 function closeModal(modal) {
   modal.classList.remove("modal_is-opened");
+  document.removeEventListener("keydown", handleEsc);
+  modal.removeEventListener("mousedown", handleClickOutside);
 }
 
 editProfileCloseBtn.addEventListener("click", function () {
@@ -159,8 +157,8 @@ function handleNewPostSubmit(event) {
   cardContainer.prepend(cardElement);
   event.preventDefault();
   closeModal(newPostModal);
-  newPostImgInput.value = "";
-  newPostCaptionInput.value = "";
+  disableButton(newPostForm.querySelector(settings.submitButtonSelector));
+  newPostForm.reset();
 }
 
 initialCards.forEach((card) => {
