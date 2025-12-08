@@ -143,7 +143,7 @@
   border-radius: 8px;
 }
 
-.modal__title_type_preview {
+.modal__caption {
   font-family: Poppins, Arial, Helvetica, sans-serif;
   font-size: 20px;
   padding: 4px 8px;
@@ -164,10 +164,10 @@
   background: url(../images/close_white_hover.svg) no-repeat center/cover;
 }
 
-.modal__button_inactive {
+.modal__submit-btn_disabled {
   opacity: 0.5;
 }
-.modal__button_inactive:hover {
+.modal__submit-btn_disabled:hover {
   opacity: 0.5;
 }
 

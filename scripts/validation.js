@@ -2,7 +2,7 @@ const settings = {
   formSelector: ".modal__form",
   inputSelector: ".modal__input",
   submitButtonSelector: ".modal__submit-btn",
-  inactiveButtonClass: "modal__button_inactive",
+  inactiveButtonClass: "modal__submit-btn_disabled",
   inputErrorClass: "modal__input_type_error",
   errorClass: "modal__error_visible",
 };
@@ -32,7 +32,9 @@ const hideInputError = (formEl, inputEl, config) => {
 const setEventListeners = (formEl, config) => {
   const inputList = Array.from(formEl.querySelectorAll(config.inputSelector));
   const buttonEl = formEl.querySelector(config.submitButtonSelector);
-  disableButton(buttonEl, config);
+  formEl.addEventListener("reset", () => {
+    disableButton(buttonEl, config);
+  });
   inputList.forEach((inputEl) => {
     inputEl.addEventListener("input", function () {
       checkInputValidity(formEl, inputEl, config);
