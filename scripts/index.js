@@ -42,7 +42,7 @@ const profileDescriptionEl = document.querySelector(".profile__description");
 
 const editProfileModal = document.querySelector("#edit-profile-modal");
 const editProfileBtn = document.querySelector(".profile__edit-btn");
-const editProfileForm = editProfileModal.querySelector(".modal__form");
+const editProfileForm = document.forms["edit-profile-form"];
 const editProfileCloseBtn = editProfileModal.querySelector(".modal__close-btn");
 const editProfileNameInput = editProfileModal.querySelector(
   "#profile-name-input"
@@ -65,7 +65,7 @@ const closePreviewModalBtnEl = previewModal.querySelector(
   ".modal__close-btn_type_preview"
 );
 const previewImgEl = previewModal.querySelector(".modal__image_type_preview");
-const previewTitleEl = previewModal.querySelector(".modal__title_type_preview");
+const previewTitleEl = previewModal.querySelector(".modal__caption");
 
 function getCardElement(data) {
   const cardElement = cardTemplate.querySelector(".card").cloneNode(true);
@@ -102,20 +102,22 @@ editProfileBtn.addEventListener("click", function () {
   );
   openModal(editProfileModal);
 });
-
+function handleEsc(evt) {
+  if (evt.key === "Escape") {
+    const openedModal = document.querySelector(".modal_is-opened");
+    closeModal(openedModal);
+  }
+}
+function handleClickOutside(evt) {
+  if (evt.target === evt.currentTarget) {
+    closeModal(evt.currentTarget);
+  }
+}
 function openModal(modal) {
   modal.classList.add("modal_is-opened");
-  function handleEsc(evt) {
-    if (evt.key === "Escape") {
-      closeModal(modal);
-    }
-  }
+
   document.addEventListener("keydown", handleEsc);
-  function handleClickOutside(evt) {
-    if (evt.target === modal) {
-      closeModal(modal);
-    }
-  }
+
   modal.addEventListener("mousedown", handleClickOutside);
 }
 
@@ -157,7 +159,6 @@ function handleNewPostSubmit(event) {
   cardContainer.prepend(cardElement);
   event.preventDefault();
   closeModal(newPostModal);
-  disableButton(newPostForm.querySelector(settings.submitButtonSelector));
   newPostForm.reset();
 }
 
