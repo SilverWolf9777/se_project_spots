@@ -38,6 +38,17 @@
   box-sizing: border-box;
 }
 
+.modal__container-small {
+  width: auto;
+}
+
+.modal__row-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+}
+
 .modal__close-btn {
   position: absolute;
   width: 40px;
@@ -54,11 +65,20 @@
   background: url(../images/close-hover.svg) no-repeat center/cover;
 }
 
+.modal__close-btn-type-delete {
+  top: 0px;
+  right: -52px;
+}
+
 .modal__title {
   margin: 0px;
   font-weight: 500;
   font-size: 32px;
   line-height: 100%;
+}
+
+.modal__font-size-24 {
+  font-size: 24px;
 }
 
 .modal__form {
@@ -109,6 +129,26 @@
 
 .modal__error_visible {
   display: block;
+}
+
+.modal__deleteBtn:hover {
+  background-color: #ff3333;
+}
+.modal__deleteBtn {
+  background-color: #ff6565;
+}
+
+.modal__btn-size {
+  cursor: pointer;
+  height: 52px;
+  width: 156px;
+  padding: 18px 32px;
+  border-radius: 8px;
+}
+
+.modal__cancel-btn {
+  background-color: #212121;
+  color: white;
 }
 
 .modal__submit-btn {
