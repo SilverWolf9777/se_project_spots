@@ -20,6 +20,7 @@ This project is a photo sharing website, focused on helping learn the basics of 
 - [Link to the project on Figma](https://www.figma.com/design/mXGZ6wZ4QPKx5KjpHX9QCV/Sprint-9-Project--Spots?node-id=0-1&p=f&t=fsN1EyHz42KYwNaj-0)
 
 **API**
+
 The API that was used is right here.
 https://around-api.en.tripleten-services.com/v1
 
