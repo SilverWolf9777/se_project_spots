@@ -47,10 +47,10 @@ const editProfileBtn = document.querySelector(".profile__edit-btn");
 const editProfileForm = document.forms["edit-profile-form"];
 const editProfileCloseBtn = editProfileModal.querySelector(".modal__close-btn");
 const editProfileNameInput = editProfileModal.querySelector(
-  "#profile-name-input"
+  "#profile-name-input",
 );
 const editProfileDescriptionInput = editProfileModal.querySelector(
-  "#profile-description-input"
+  "#profile-description-input",
 );
 
 const newPostModal = document.querySelector("#new-post-modal");
@@ -62,7 +62,7 @@ const newPostCaptionInput = newPostModal.querySelector("#card-caption-input");
 
 const previewModal = document.querySelector("#preview-modal");
 const closePreviewModalBtnEl = previewModal.querySelector(
-  ".modal__close-btn_type_preview"
+  ".modal__close-btn_type_preview",
 );
 const previewImgEl = previewModal.querySelector(".modal__image_type_preview");
 const previewTitleEl = previewModal.querySelector(".modal__caption");
@@ -153,7 +153,7 @@ function getCardElement(data) {
     api
       .isLikedChange(
         data._id,
-        !cardLikeBtnEl.classList.contains("card__like-btn_active")
+        !cardLikeBtnEl.classList.contains("card__like-btn_active"),
       )
       .then(() => {
         cardLikeBtnEl.classList.toggle("card__like-btn_active");
@@ -176,13 +176,13 @@ editProfileBtn.addEventListener("click", () => {
   resetValidation(
     editProfileForm,
     [editProfileNameInput, editProfileDescriptionInput],
-    settings
+    settings,
   );
   openModal(editProfileModal);
 });
 
 editProfileCloseBtn.addEventListener("click", () =>
-  closeModal(editProfileModal)
+  closeModal(editProfileModal),
 );
 
 editProfileForm.addEventListener("submit", (event) => {
@@ -229,7 +229,6 @@ newPostForm.addEventListener("submit", (event) => {
       const cardElement = getCardElement(newCard);
       cardContainer.prepend(cardElement);
       closeModal(newPostModal);
-      newPostForm.reset();
     });
   }
   handleSubmit(requestNewPost, event);
@@ -237,13 +236,13 @@ newPostForm.addEventListener("submit", (event) => {
 
 // Preview modal
 closePreviewModalBtnEl.addEventListener("click", () =>
-  closeModal(previewModal)
+  closeModal(previewModal),
 );
 
 // Delete modal
 deletePostCloseBtn.addEventListener("click", () => closeModal(deletePostModal));
 deletePostCancelBtn.addEventListener("click", () =>
-  closeModal(deletePostModal)
+  closeModal(deletePostModal),
 );
 
 // ---------------------------

@@ -6,32 +6,33 @@ An image sharing site
 
 - Intro
 - Figma
-- Images
+- API
 - Project Pitch Video
-- link
-
-This is my Spots project where we practice media queries and making the page more responsive. Also learn about figma design.
+- links
+- Images
 
 **Intro**
 
-This project is made so all the elements are displayed correctly on popular screen sizes. We recommend investing more time in completing this project, since it's more difficult than previous ones.
+This project is a photo sharing website, focused on helping learn the basics of html, css, javascript, and using API's to save data on a server.
 
 **Figma**
 
-- [Link to the project on Figma](https://www.figma.com/file/BBNm2bC3lj8QQMHlnqRsga/Sprint-3-Project-%E2%80%94-Spots?type=design&node-id=2%3A60&mode=design&t=afgNFybdorZO6cQo-1)
+- [Link to the project on Figma](https://www.figma.com/design/mXGZ6wZ4QPKx5KjpHX9QCV/Sprint-9-Project--Spots?node-id=0-1&p=f&t=fsN1EyHz42KYwNaj-0)
 
-**Images**
+**API**
+The API that was used is right here.
+https://around-api.en.tripleten-services.com/v1
 
-The way you'll do this at work is by exporting images directly from Figma — we recommend doing that to practice more. Don't forget to optimize them [here](https://tinypng.com/), so your project loads faster.
+**Project Pitch Video**
 
-Good luck and have fun!
+[Click here to check out my project pitch](https://www.loom.com/share/5f457155047b425887b048722ae76875)
 
-## Project Pitch Video
-
-Check out [this video](https://drive.google.com/file/d/10zanIqlY2Ek158CFalXDtTCq02kUH8LC/view?usp=drive_link), where I describe my
-project and some challenges I faced while building it.
+**links**
 
 [Check the page out on git hub!](https://silverwolf9777.github.io/se_project_spots/)
 
-[project pitch for stage 9](https://www.loom.com/share/5f457155047b425887b048722ae76875)
-My free trial ended and won't let me download it to add it to google drive.
+[Check out my youtube channel!](https://www.youtube.com/channel/UCDswY2sd6D2E0bfMPRhWjgg)
+
+**Images**
+
+Images are written in a different syntax for dynamic loading within webpack and won't be loaded on vs code's live server due to the use of webpack.

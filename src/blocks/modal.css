@@ -10,7 +10,9 @@
   bottom: 0;
   left: 0;
   opacity: 0;
-  transition: visibility 0s linear 0.5s, opacity 0.5s linear;
+  transition:
+    visibility 0s linear 0.5s,
+    opacity 0.5s linear;
 }
 
 .modal_type_preview {
@@ -79,6 +81,8 @@
 
 .modal__font-size-24 {
   font-size: 24px;
+  display: flex;
+  flex-direction: column;
 }
 
 .modal__form {
@@ -219,6 +223,21 @@
     top: 12px;
     right: 12px;
   }
+  .modal__close-btn-type-delete {
+    top: -56px;
+    right: 6px;
+  }
+  .modal__center-text {
+    text-align: center;
+  }
+  .modal__container-small {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+  }
+
   .modal__close-btn_type_preview {
     top: -48px;
     right: 0px;
@@ -233,6 +252,9 @@
   .modal__label,
   .modal__input {
     font-size: 16px;
+  }
+  .modal__row-container {
+    flex-direction: column;
   }
   .modal__submit-btn {
     max-width: none;
