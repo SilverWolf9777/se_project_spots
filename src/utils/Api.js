@@ -25,7 +25,6 @@ class Api {
     });
   }
 
-  //other methods
   editUserInfo({ name, about }) {
     return this._request(`${this._baseUrl}/users/me`, {
       method: "PATCH",
