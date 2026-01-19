@@ -26,13 +26,13 @@ https://around-api.en.tripleten-services.com/v1
 
 **Project Pitch Video**
 
-[Click here to check out my project pitch](https://www.loom.com/share/5f457155047b425887b048722ae76875)
+[Click here to check out my project pitch](https://www.youtube.com/watch?v=RtBVTOiTCmI)
 
 **links**
 
-[Check the page out on git hub!](https://silverwolf9777.github.io/se_project_spots/)
+[Check the page out on git hub!](https://github.com/SilverWolf9777/se_project_spots)
 
-[Check out my youtube channel!](https://www.youtube.com/channel/UCDswY2sd6D2E0bfMPRhWjgg)
+[Check out my youtube channel!](https://www.youtube.com/watch?v=XpkEywNXG1E)
 
 **Images**
 
